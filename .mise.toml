@@ -1,0 +1,9 @@
+# This a template for .rtx.toml for python
+# In many cases we also symlink .venv in the current directory to
+# the .pyenv version because tools can pick up the correct env more easily
+[env]
+_.file = '.env'
+_.python.venv = { path = ".venv", create = true } # use a specific python version.
+[tools]
+python = '3.13.1'
+node = "20.11.1"
